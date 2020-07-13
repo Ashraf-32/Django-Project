@@ -25,7 +25,7 @@ SECRET_KEY = 'w%^e36=x09_29ccw8ss(ghdh#q3)z=i96!%tmx$soj=!4)(ulr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['myblogapptest.herokuapp.com']
 
 
 # Application definition
@@ -136,4 +136,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER =  'syedishmam12@gmail.com'
-EMAIL_HOST_PASSWORD = 'qkztwcvcxznveuje'
+EMAIL_HOST_PASSWORD = os.environ.get('APP_PASS')
