@@ -15,7 +15,9 @@
         </div>
         <h2 class="article-title">{{ object.title }}</h2>
         <p class="article-content">{{ object.content }}</p>
-        <img src="{{ object.photo.url }}" alt="">
+        {% if object.photo %}
+            <img src="{{ object.photo.url }}" alt="">
+        {% endif %}
         </div>
     </article>
 
